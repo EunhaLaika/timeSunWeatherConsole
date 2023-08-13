@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+
+	<title>TSW console</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://unpkg.com/suncalc@latest"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container123">
+          <div id="app2">
+            <div id="weatherInfo2">
+              <div id="solar-altitude-chart"></div>
+              <canvas id="temperatureGauge2" width="250" height="250"></canvas>
+            </div>
+            <div class="clock">
+              <div class="hand hour-hand"></div>
+              <div class="hand minute-hand"></div>
+              <div class="hand second-hand"></div>
+            </div>
+            <div id="controls4">
+              <h1>t</h1>
+            </div>
+            <div id="app">
+              <div id="weatherInfo">
+                <canvas id="temperatureGauge" width="250" height="250"></canvas>
+              </div>
+              <div id="controls1">
+
+              </div>
+              <div id="controls2">
+
+              </div>
+              <div id="controls3">
+                <h2>℃</h2>
+              </div>
+            </div>
+          </div>
+          <input type="text" id="cityInput" placeholder="manual input + enter" onkeydown="handleEnterKey(event)">
+          <button onclick="searchWeatherByLocation()" id="btn123">GPS</button>
+        </div>
+	<script src="script.js"></script>
+</body>
+</html>

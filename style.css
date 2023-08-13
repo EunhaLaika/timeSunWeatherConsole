@@ -1,0 +1,205 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+	font-family: Arial, sans-serif;
+}
+
+/* Hide the Plotly toolbar */
+.js-plotly-plot .plotly .modebar {
+  display: none !important;
+}
+
+#controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    padding: 10px ;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #242323;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #A80000;
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+
+  #temperatureGauge2 {
+    
+    position: relative;
+
+  }
+  .clock {
+  width: 220px;
+  height: 220px;
+  border: 5px solid rgb(none);
+  top:14.8%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.hand {
+  width: 50%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+}
+
+.hour-hand {
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.minute-hand {
+  background-color: #ffffff;
+}
+
+.second-hand {
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+}
+  
+#container123{
+  width:250px;
+  height:500px;
+  background-color: black;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:absolute;
+  top:5%;
+  left:50%;
+  margin-left:-150px;
+}
+
+
+  #app {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: none;
+    padding: 2rem;
+    border-radius: 1rem;
+    position:absolute;
+    top:90%;
+
+
+  }
+
+  #app2 {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: none;
+    padding: 2rem;
+    border-radius: 1rem;
+    position:absolute;
+    top:-3%;
+
+
+  }
+
+
+  #cityInput {
+    margin: 0.5rem;
+    font-size: 14px;
+  }
+
+  #btn123 {
+    margin: 0.5rem;
+    font-size: 14px;
+    top:43.5%;
+    right:72%;
+    height:10.5%;
+    position:absolute;
+    border-radius: 10rem;
+  }
+
+  #cityInput {
+    width: 190px;
+    top:46.5%;
+    left:27%;
+    position:absolute;
+    background-color: rgb(56, 56, 56);
+    color:white;
+
+  }
+
+  #controls1 {
+    position: absolute;
+    top: 56%;
+    left: 70%;
+    transform: translate(-50%, -100%);
+  }
+
+  #controls2 {
+    position: absolute;
+    top: 56%;
+    left: 34%;
+    transform: translate(-50%, -100%);
+  }
+
+  #controls3 {
+    position: absolute;
+    color:white;
+    top: 77%;
+    left: 49.9%;
+    
+    transform: translate(-50%, -100%);
+  }
+
+  #controls4 {
+    position: absolute;
+    color:white;
+    top: 77%;
+    left: 49.9%;
+    
+    transform: translate(-50%, -100%);
+  }
+
+  #button123{display:none;}
+
+  #cityInput{text-align:center;}
+
+  #temperatureGauge {
+    
+    position: relative;
+    z-index:1;
+  }
+
+  #solar-altitude-chart {
+    width: 100px;
+    height: 50px;
+    margin: 0;
+    position:absolute;
+    right:34.5%;
+    top:30%;
+    background-color: black;
+}
